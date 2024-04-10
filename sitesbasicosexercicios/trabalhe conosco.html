@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <title>Biopark Educação</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      text-align: center;
+      padding: 20px;
+    }
+    .logo img {
+      max-width: 200px;
+    }
+    .links {
+      padding-top: 15px;
+      white-space: nowrap;
+    }
+    .links a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+    .links a:hover {
+      color: #007bff;
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    form {
+      display: inline-block; 
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+    }
+    input[type="email"],
+    input[type="password"],
+    input[type="file"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    
+  <table>
+    <tr>
+      <td class="logo" colspan="2">
+        <a href="exercicio002.html"><img src="imagens/Biopark-Educacao.svg" alt="Biopark Educação"></a>
+      </td>
+    </tr>
+    <tr>
+      <td class="links" colspan="2">
+        <a href="sobre.html">Sobre Biopark</a>
+        <a href="invista.html">Invista</a>
+        <a href="empresas.html">Empresas</a>
+        <a href="trabalhe conosco.html">Trabalhe Conosco</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h1>Trabalhe conosco</h1>
+        <p>Venha fazer parte da nossa equipe</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <form action="/submit_form.php" method="post" enctype="multipart/form-data">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="senha">Senha:</label><br>
+          <input type="password" id="senha" name="senha" required><br><br>
+          <label for="pdf">Selecione um PDF:</label><br>
+          <input type="file" id="pdf" name="pdf" accept=".pdf"><br><br>
+          <input type="submit" value="Enviar">
+        </form>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
